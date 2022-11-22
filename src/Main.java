@@ -58,6 +58,6 @@ public class Main {
 
         System.out.println("Containers return to their origin at minimum cost: ");
         newgraph.printGraph();
-        System.out.println("Total Costs using this algorithm: " + moneyUsed);
+        System.out.println("Total Costs using this algorithm: " + moneyUsed*100);
     }
 }
