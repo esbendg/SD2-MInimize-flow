@@ -16,7 +16,7 @@ public class Matrixgraph {
         matrixweightgraph[from][to]=weight;
     }
     /*
-    Method for
+    Method for printing the graph
      */
     public void printGraph (){
         for (int fromi = 0; fromi< matrixedgegraph.length; fromi ++){
@@ -30,7 +30,9 @@ public class Matrixgraph {
             System.out.println();
         }
     }
-
+/*
+Method for finding the index of the biggest number in a given list
+ */
     public int findBiggestindex (int[] list) {
         int biggest = 0;
         int index = 0;
@@ -41,6 +43,9 @@ public class Matrixgraph {
             }
         } return index;
     }
+    /*
+Method for finding the index of the lowest number in a given list
+ */
     public int findLowestindex (int[] list) {
         int lowest = 0;
         int index = 0;
