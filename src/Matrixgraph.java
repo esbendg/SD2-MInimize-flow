@@ -1,4 +1,8 @@
 public class Matrixgraph {
+
+    /*
+    Create two matrices containing the edges and weights of the vertices.
+     */
     int [][] matrixedgegraph;
     int [][] matrixweightgraph;
 
@@ -11,6 +15,9 @@ public class Matrixgraph {
         matrixedgegraph[from][to]=1;
         matrixweightgraph[from][to]=weight;
     }
+    /*
+    Method for
+     */
     public void printGraph (){
         for (int fromi = 0; fromi< matrixedgegraph.length; fromi ++){
             System.out.println("Edge from vertex "+ fromi);
@@ -24,7 +31,7 @@ public class Matrixgraph {
         }
     }
 
-    public int findBiggestindex (int list[]) {
+    public int findBiggestindex (int[] list) {
         int biggest = 0;
         int index = 0;
         for (int i = 0; i < list.length; i++){
@@ -34,7 +41,7 @@ public class Matrixgraph {
             }
         } return index;
     }
-    public int findLowestindex (int list[]) {
+    public int findLowestindex (int[] list) {
         int lowest = 0;
         int index = 0;
         for (int i = 0; i < list.length; i++){
@@ -43,13 +50,5 @@ public class Matrixgraph {
                 index = i;
             }
         } return index;
-    }
-
-    public int addhightolow (int indexofhigh, int indexoflow, int amount){
-        if (matrixedgegraph[indexofhigh][indexoflow]==0){
-            addEdge(indexofhigh,indexoflow, amount);
-        }
-        int netAmount = matrixweightgraph[indexofhigh][indexoflow];
-        return netAmount;
     }
 }
